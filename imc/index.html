@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora imc - índice de massa corporal</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="main-bg">
+      <div class="imc-box">
+        <div class="imc-calculator-content">
+          <h1>Calculadora IMC</h1>
+          <div>
+            <label for="weight">Peso em KG</label>
+            <input type="number" name="weight" id="weight"/>
+          </div>
+          <div>
+            <label for="height">Altura em CM</label>
+            <input type="number" name="height" id="height"/>
+          </div>
+          <button onclick="calculateIMC()">Calcular meu IMC</button>
+          <p id="result"></p>
+        </div>
+        <div class="imc-classification-content">
+          <ul>
+            <li>baixo peso < 18,6</li>
+            <li>peso ideal entre 18,6 - 24,9</li>
+            <li>sobrepeso entre 25 - 29,99</li>
+            <li>obesidade > 30</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="js/app.js"></script>
+  </body>
+</html>
